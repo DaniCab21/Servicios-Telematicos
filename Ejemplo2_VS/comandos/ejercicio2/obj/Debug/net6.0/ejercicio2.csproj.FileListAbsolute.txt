@@ -1,0 +1,15 @@
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\bin\Debug\net6.0\ejercicio2.exe
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\bin\Debug\net6.0\ejercicio2.deps.json
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\bin\Debug\net6.0\ejercicio2.runtimeconfig.json
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\bin\Debug\net6.0\ejercicio2.dll
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\bin\Debug\net6.0\ejercicio2.pdb
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\obj\Debug\net6.0\ejercicio2.csproj.AssemblyReference.cache
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\obj\Debug\net6.0\ejercicio2.GeneratedMSBuildEditorConfig.editorconfig
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\obj\Debug\net6.0\ejercicio2.AssemblyInfoInputs.cache
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\obj\Debug\net6.0\ejercicio2.AssemblyInfo.cs
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\obj\Debug\net6.0\ejercicio2.csproj.CoreCompileInputs.cache
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\obj\Debug\net6.0\ejercicio2.dll
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\obj\Debug\net6.0\refint\ejercicio2.dll
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\obj\Debug\net6.0\ejercicio2.pdb
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\obj\Debug\net6.0\ejercicio2.genruntimeconfig.cache
+D:\ServiciosTelematicos\Ejemplo2_VS\comandos\ejercicio2\obj\Debug\net6.0\ref\ejercicio2.dll

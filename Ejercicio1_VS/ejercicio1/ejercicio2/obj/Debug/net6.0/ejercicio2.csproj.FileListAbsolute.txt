@@ -1,0 +1,15 @@
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\bin\Debug\net6.0\ejercicio2.exe
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\bin\Debug\net6.0\ejercicio2.deps.json
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\bin\Debug\net6.0\ejercicio2.runtimeconfig.json
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\bin\Debug\net6.0\ejercicio2.dll
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\bin\Debug\net6.0\ejercicio2.pdb
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\obj\Debug\net6.0\ejercicio2.csproj.AssemblyReference.cache
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\obj\Debug\net6.0\ejercicio2.GeneratedMSBuildEditorConfig.editorconfig
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\obj\Debug\net6.0\ejercicio2.AssemblyInfoInputs.cache
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\obj\Debug\net6.0\ejercicio2.AssemblyInfo.cs
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\obj\Debug\net6.0\ejercicio2.csproj.CoreCompileInputs.cache
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\obj\Debug\net6.0\ejercicio2.dll
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\obj\Debug\net6.0\refint\ejercicio2.dll
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\obj\Debug\net6.0\ejercicio2.pdb
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\obj\Debug\net6.0\ejercicio2.genruntimeconfig.cache
+D:\ServiciosTelematicos\Ejercicio1_VS\ejercicio1\ejercicio2\obj\Debug\net6.0\ref\ejercicio2.dll

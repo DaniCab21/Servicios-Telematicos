@@ -1,0 +1,15 @@
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\bin\Debug\net6.0\holaMundo.exe
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\bin\Debug\net6.0\holaMundo.deps.json
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\bin\Debug\net6.0\holaMundo.runtimeconfig.json
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\bin\Debug\net6.0\holaMundo.dll
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\bin\Debug\net6.0\holaMundo.pdb
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\obj\Debug\net6.0\holaMundo.csproj.AssemblyReference.cache
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\obj\Debug\net6.0\holaMundo.GeneratedMSBuildEditorConfig.editorconfig
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\obj\Debug\net6.0\holaMundo.AssemblyInfoInputs.cache
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\obj\Debug\net6.0\holaMundo.AssemblyInfo.cs
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\obj\Debug\net6.0\holaMundo.csproj.CoreCompileInputs.cache
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\obj\Debug\net6.0\holaMundo.dll
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\obj\Debug\net6.0\refint\holaMundo.dll
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\obj\Debug\net6.0\holaMundo.pdb
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\obj\Debug\net6.0\holaMundo.genruntimeconfig.cache
+D:\ServiciosTelematicos\Ejemplo1_VS\netcore\holaMundo\obj\Debug\net6.0\ref\holaMundo.dll
