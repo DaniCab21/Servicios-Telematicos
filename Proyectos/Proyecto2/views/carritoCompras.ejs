@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("template/header", {titulo :"carritoCompras2"}) %>
+  <body>
+    <h1>Carrito de Compras</h1>
+    <%-include("template/navbar")%>
+
+    <table class="table" id="tablaProductos">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Artículo</th>
+          <th scope="col">Precio Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i = 0; i < vector.length; i++) { %>
+          <tr>
+            <th scope="row"><%= vector[i].articulosAñadidos %></th>
+            <td><%= vector[i].cantidadSeleccionada %></td>
+            <td><%= vector[i].articulo %></td>
+            <td>$ <%= vector[i].precioTotal %></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </body>
+</html>

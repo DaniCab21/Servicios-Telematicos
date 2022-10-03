@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include("template/header",{titulo}) %>
+  <body>
+    <h1 class="text-primary text-center" id="tipo" value="tipo"> <%= titulo %> </h1>
+  </body>
+  <%-include("template/navbar")%>
+
+  <div id="carouselExampleIndicators" class="carousel slide" style="max-width: 30%; height: auto; align-items: center;" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src=<%= url1 %> class="d-block w-100" alt="reloj 1">
+      </div>
+      <div class="carousel-item">
+        <img src=<%= url2 %> class="d-block w-100" alt="reloj 2">
+      </div>
+      <div class="carousel-item">
+        <img src=<%= url3 %> class="d-block w-100" alt="reloj 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<br>
+
+  <form action="/carritoCompras" method="post" class="justify-content" style=<%= display %>>
+    <div>
+      <span>Cantidades Disponibles: <b><%= cantidades %></b></span> 
+    </div>
+    <div>
+      <label for="precio">Precio del Artículo</label>
+      <input type="text" id="precio" name="precio" value="<%= precio %>" readonly>
+    </div>
+    <div>
+      <input type="hidden" id="articulo" name="articulo" value="<%= titulo %>" readonly>
+    </div>
+    <div class="form-group">
+      <label for="cantidad">Seleccione la Cantidad de Artículos:</label>
+      <select class="form-control" id="cantidad" name="cantidad" style="width: 100px;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <button class="btn btn-primary" type="submit">Añadir a Carrito de Compras</button>
+  </form>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+   </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "crud_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-myconnection": "^1.0.4",
+    "handlebars": "^4.7.7",
+    "hbs": "^4.2.0",
+    "morgan": "^1.10.0"
+  }
+}

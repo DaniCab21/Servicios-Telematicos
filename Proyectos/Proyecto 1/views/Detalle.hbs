@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />  
+    <style>
+    h3 {
+      text-align: center;
+      font-family: cursive;
+    }
+
+    th {
+      text-align: center;
+      font-family: cursive;
+    }
+
+    * {
+      font-family: 'Gill Sans', 'Gill Sans MT',
+        Calibri, 'Trebuchet MS', sans-serif;
+      font-family: cursive;
+      font-size: 15px;
+    }
+  </style>
+  <title>PRODUCTOS</title>
+</head>
+
+<body>
+    <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        {{#each productos}}
+          <h4 class="text-white"><a href="/detalles/{{this.id}}">{{this.nombre}}</a>
+        {{/each}}
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+  <div class="container">
+    <a class="btn btn-info" style="margin: 10px;" href="/crearProducto">Nuevo</a>
+  </div>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h3>INFORMACIÓN</h3>
+      </div>
+      <div class="card-body">
+        <table class="table .table-hover table-bordered">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>NOMBRE</th>
+              <th>PRECIO</th>
+              <th>DESCRIPCIÓN</th>
+              <th>IMPUESTOS</th>
+              <th>VENDEDOR</th>
+              <th>IMAGEN</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#if this.producto includeZero=true}}
+              <tr class="text-center">
+              <td>{{this.producto.id}}</td>
+              <td>{{this.producto.nombre}}</td>
+              <td>{{this.producto.precio}}</td>
+              <td>{{this.producto.descripcion}}</td>
+              <td>{{this.producto.impuestos}}</td>
+              <td>{{this.producto.vendedor}}</td>
+              <td ><img class="img-fluid" src='http://localhost:3000/{{this.producto.image}}'></td>
+            </tr>
+          {{/if}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+</html>
