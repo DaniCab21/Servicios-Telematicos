@@ -1,0 +1,116 @@
+:root {
+  --alto: 150px;
+}
+
+body {
+  background-image: url("https://us.123rf.com/450wm/praewpailin/praewpailin1903/praewpailin190300571/124292913-piso-de-la-cancha-de-baloncesto-verde-con-fondo-de-patr%C3%B3n-de-l%C3%ADnea-campo-de-baloncesto-ilustraci%C3%B3n-d.jpg?ver=6");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: 1500px 650px;
+}
+
+#jugador1 {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  height: var(--alto);
+}
+
+#jugador2 {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  height: var(--alto);
+}
+
+#pelota {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+
+.puntos {
+  text-align: center;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.puntos--color {
+  color: white;
+  font-size: 40px;
+}
+
+.caja-botones {
+    width: 100px;
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+  }  
+
+.botones {
+  background-color: crimson;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+  margin: 2px auto;
+  cursor: pointer;
+}
+
+.botones:hover {
+  background-color: darkcyan;
+}
+
+.div_hide {
+  opacity: 0;
+}
+
+.video-wrap {
+  display: grid;
+  position: absolute;
+  right: 38%;
+  bottom: 2%;
+}
+
+.mostrar{
+  position: absolute;
+  right: 40%;
+  bottom: 30%;
+  opacity: 1;
+}
+
+.ocultar{
+  position: absolute;
+  right: 40%;
+  bottom: 30%;
+  opacity: 0;
+}
+
+.boton--grabar{
+  background-color: crimson;
+  border: none;
+  height: 30px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.boton--grabar:hover{
+  background-color: cyan;
+  cursor: pointer;
+}
+
+.titulo{
+  text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: transparent;
+  cursor: none;
+  border: none;
+  font-size: 25px;
+}

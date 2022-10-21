@@ -26,12 +26,12 @@ var usuarios = [
 
 signUpButton.addEventListener("click", () => {
   container.classList.add("right-panel-active");
-  console.log('ejecutando JS');
+  console.log('ejecutando JS agregando clase right panel active desde boton Registrarse');
 });
 
 signInButton.addEventListener("click", () => {
   container.classList.remove("right-panel-active");
-  console.log('ejecutando JS');
+  console.log('ejecutando JS agregando clase right panel active desde boton iniciar sesion');
 });
 
 function validarUsuario() {

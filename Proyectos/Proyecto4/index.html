@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Proyecto No. 4</title>
+  </head>
+  <body>
+    <div class="puntos">
+      <span id="punto1" class="puntos--color">Player #1 | 0</span>
+      <span class="puntos--color">-</span>
+      <span id="punto2" class="puntos--color">0 | Player #2</span>
+    </div>
+
+    <img
+      id="pelota"
+      src="https://upload.wikimedia.org/wikipedia/commons/7/72/Basketball_Clipart.svg"
+      alt=""
+      width="40px"
+    />
+
+    <div class="caja-botones">
+      <div>
+        <button class="botones" onclick="subir();">
+          <span class="material-symbols-outlined"> expand_less </span>
+        </button>
+      </div>
+
+      <div>
+        <button class="botones" onclick="lanzar();">
+          <span class="material-symbols-outlined"> sports_basketball </span>
+        </button>
+      </div>
+
+      <div>
+        <button class="botones" onclick="bajar();">
+          <span class="material-symbols-outlined"> expand_more </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="centro">
+      <canvas id="canvas" height="30px"></canvas>
+    </div>
+
+    <img
+      src="https://www.gifss.com/deportes/baloncesto/images/baloncesto-13.gif"
+      id="jugador1"
+    />
+    <img
+      src="https://www.gifsanimados.org/data/media/159/baloncesto-y-basquetball-imagen-animada-0008.gif"
+      id="jugador2"
+    />
+
+    <div class="video-wrap">
+      <button class="titulo">Narrador:</button>
+      <video id="video" autoplay></video>
+      <audio src="">En vivo</audio>
+      <div>
+        <button class="boton--grabar" id="btnStart">Grabar</button>
+        <button class="boton--grabar" id="btnStop" style="margin-left: 20%">
+          Detener
+        </button>
+      </div>
+      <audio src="" id="adioPlay">En vivo</audio>
+    </div>
+
+    <div class="ocultar" id="anotacion">
+      <img
+        src="https://www.gifss.com/deportes/baloncesto/images/baloncesto-20.gif"
+        alt=""
+      />
+    </div>
+
+    <script src="script/js.js"></script>
+    <script>
+      window.onload = iniciarWebCam;
+    </script>
+  </body>
+</html>
