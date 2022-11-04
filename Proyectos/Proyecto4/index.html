@@ -1,86 +1,94 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <title>Proyecto No. 4</title>
+    <meta charset="utf-8" />
+    <title>Proyecto #3</title>
+    <link rel="stylesheet" href="style/css.css" />
   </head>
   <body>
-    <div class="puntos">
-      <span id="punto1" class="puntos--color">Player #1 | 0</span>
-      <span class="puntos--color">-</span>
-      <span id="punto2" class="puntos--color">0 | Player #2</span>
-    </div>
-
-    <img
-      id="pelota"
-      src="https://upload.wikimedia.org/wikipedia/commons/7/72/Basketball_Clipart.svg"
-      alt=""
-      width="40px"
-    />
-
-    <div class="caja-botones">
-      <div>
-        <button class="botones" onclick="subir();">
-          <span class="material-symbols-outlined"> expand_less </span>
-        </button>
+    <h2>Proyecto Número 3 - Servicios Telemáticos</h2>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form method="dialog" action="#">
+          <h1>Crear una Cuenta</h1>
+          <span>Ingresa los siguientes datos</span>
+          <input
+            type="text"
+            placeholder="Nombre de Usuario"
+            id="usuarioRegistro"
+            autocomplete="off"
+          />
+          <select
+            name="tipoPermiso"
+            class="listaDesplegable"
+            id="selectRegistro"
+          >
+            <option selected="true" disabled="disabled">
+              Selecciona el tipo de permiso
+            </option>
+            <option value="Recursos Humanos">Recursos Humanos</option>
+            <option value="Contabilidad">Contabilidad</option>
+            <option value="Salud Ocupacional">Salud Ocupacional</option>
+            <option value="Sistemas">Sistemas</option>
+            <option value="Seguridad de la Información">
+              Seguridad de la Información
+            </option>
+            <option value="Automatización">Automatización</option>
+            <option value="Procesos">Procesos</option>
+            <option value="Gestión de la Demanda">Gestión de la Demanda</option>
+            <option value="Desarrollo">Desarrollo</option>
+          </select>
+          <input
+            type="password"
+            placeholder="Contraseña"
+            id="passwordRegistro"
+          />
+          <button onclick="crearUsuario();">Registrarse</button>
+        </form>
       </div>
 
-      <div>
-        <button class="botones" onclick="lanzar();">
-          <span class="material-symbols-outlined"> sports_basketball </span>
-        </button>
+      <div class="form-container sign-in-container">
+        <form method="dialog" action="#">
+          <h1>Ingresar</h1>
+          <span>Por favor ingresa tus credenciales para acceder</span>
+          <input
+            type="text"
+            placeholder="Usuario"
+            id="usuarioIngreso"
+            autocomplete="off"
+          />
+          <input
+            type="password"
+            placeholder="Contraseña"
+            id="passwordIngreso"
+            name="passwordIngreso"
+          />
+          <button id="botonIngresar" onclick="validarUsuario();">Entrar</button>
+        </form>
       </div>
 
-      <div>
-        <button class="botones" onclick="bajar();">
-          <span class="material-symbols-outlined"> expand_more </span>
-        </button>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Bienvenido</h1>
+            <p>
+              Si ya tienes una cuenta inicia sesión dando clic en el boton
+              'Iniciar Sesión'.
+            </p>
+            <button class="ghost" id="signIn">Iniciar Sesión</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hola</h1>
+            <p>
+              Si aún no tienes una cuenta da clic en el botón 'Registrarse' para
+              poder acceder.
+            </p>
+            <button class="ghost" id="signUp">Registrarse</button>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="centro">
-      <canvas id="canvas" height="30px"></canvas>
-    </div>
-
-    <img
-      src="https://www.gifss.com/deportes/baloncesto/images/baloncesto-13.gif"
-      id="jugador1"
-    />
-    <img
-      src="https://www.gifsanimados.org/data/media/159/baloncesto-y-basquetball-imagen-animada-0008.gif"
-      id="jugador2"
-    />
-
-    <div class="video-wrap">
-      <button class="titulo">Narrador:</button>
-      <video id="video" autoplay></video>
-      <audio src="">En vivo</audio>
-      <div>
-        <button class="boton--grabar" id="btnStart">Grabar</button>
-        <button class="boton--grabar" id="btnStop" style="margin-left: 20%">
-          Detener
-        </button>
-      </div>
-      <audio src="" id="adioPlay">En vivo</audio>
-    </div>
-
-    <div class="ocultar" id="anotacion">
-      <img
-        src="https://www.gifss.com/deportes/baloncesto/images/baloncesto-20.gif"
-        alt=""
-      />
-    </div>
-
-    <script src="script/js.js"></script>
-    <script>
-      window.onload = iniciarWebCam;
-    </script>
+    <script src="js/js.js"></script>
   </body>
 </html>

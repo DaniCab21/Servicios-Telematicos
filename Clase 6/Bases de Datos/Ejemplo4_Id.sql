@@ -1,0 +1,17 @@
+create database Ejemplo4;
+use ejemplo4;
+create table Tabla1(id int not null auto_increment, grupo text, asistencia int, nota real, primary key (id));
+insert into Tabla1(grupo, asistencia, nota) values ('Grupo1',5,4.8);
+insert into Tabla1(grupo, asistencia, nota) values ('Grupo2',4,4.5);
+insert into Tabla1(grupo, asistencia, nota) values ('Grupo3',3,2.6);
+insert into Tabla1(grupo, asistencia, nota) values ('Grupo1',5,4.7);
+insert into Tabla1(grupo, asistencia, nota) values ('Grupo3',3,1.0);
+insert into Tabla1(grupo, asistencia, nota) values ('Grupo4',3,1.0);
+select *from Tabla1;
+select grupo, min(nota) as definitiva from Tabla1 limit 1;
+select grupo, max(nota) as definitiva from Tabla1 group by grupo;
+select grupo, max(nota) as definitiva from Tabla1 group by grupo order by definitiva;
+update Tabla1 set asistencia=0 where id=2;
+select *from Tabla1;
+delete from Tabla1 where id=2;
+select *from Tabla1;

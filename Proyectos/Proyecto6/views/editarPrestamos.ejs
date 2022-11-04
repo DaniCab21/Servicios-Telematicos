@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Proyecto 6 - Bases de Datos</title>
+  </head>
+  <body>
+    <!--titulo-->
+    <div style="text-align: center;"">
+        <h2>Proyecto Número 6 - Servicios Telemáticos</h2>
+    </div>
+
+    <!--Barra de Navegación-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Películas</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/copias">Copias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/clientes">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/prestamos">Préstamos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <% if (user) { %>
+        <div class="container mt-4">          
+            <div class="card border-secondary">  
+                  <div class="card-header">Editar Registros</div>
+                  <div class="card-body">
+                      <form action="/updatePrestamos" method="POST">
+                           <input id="id" name="id" value="<%= user.id_prestamos %>" hidden>
+                          <div class="mb-3">
+                            <label for="user" class="form-label">Fecha de Préstamos</label>
+                            <input type="text" class="form-control" id="fechaPrestamos" name="fechaPrestamos" tabindex="1" value="<%= user.fecha_prestamo.toLocaleDateString() %>">                        
+                          </div>   
+                          <div class="mb-3">
+                            <label for="user" class="form-label">Fecha Máxima de Entrega</label>
+                            <input type="text" class="form-control" id="fechaTope" name="fechaTope" tabindex="1" value="<%= user.fecha_tope.toLocaleDateString() %>">                        
+                          </div>   
+                          <div class="mb-3">
+                            <label for="user" class="form-label">Fecha de Entrega</label>
+                            <input type="text" class="form-control" id="fechaEntregado" name="fechaEntregado" tabindex="1" value="<%= user.fecha_entregado.toLocaleDateString() %>">                        
+                          </div>                             
+                          <div class="mb-3">
+                          </div>                                                              
+                          <button type="submit" class="btn btn-primary" tabindex="5">Guardar</button>
+                          <a href="/" class="btn btn-secondary">Cancelar</a>
+                      </form>      
+                  </div>
+              </div>     
+        </div>
+        <% } %>
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
