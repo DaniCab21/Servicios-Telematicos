@@ -1,0 +1,16 @@
+.titulo, h2 {
+    text-align: center;
+  }
+  
+  .container {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .graficas {
+    width:100%;
+  }
+  
+  
